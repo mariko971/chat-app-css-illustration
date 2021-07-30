@@ -29,14 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./chat-app-desktop.png)
-![](./chat-app-mobile.png)
+![./chat-app-desktop.png]()
+![./chat-app-mobile.png]()
 
 
 ### Links
 
-- Solution URL: [](https://github.com/mariko971/chat-app-css-illustration.git)
-- Live Site URL: [](https://mariko971.github.io/chat-app-css-illustration/)
+- Solution URL: [https://github.com/mariko971/chat-app-css-illustration.git]()
+- Live Site URL: [https://mariko971.github.io/chat-app-css-illustration/]()
 
 ## My process
 
@@ -50,6 +50,6 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/mariko971)
+- Frontend Mentor - [@mariko971](https://www.frontendmentor.io/profile/yourusername)
 
 
