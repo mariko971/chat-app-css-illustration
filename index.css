@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root{
+    /* PRIMARY */
+    --app-sub-heading: hsl(276, 100%, 81%);
+    --chat-txt-left:  hsl(276, 55%, 52%);
+    --chat-txt-right:  hsl(271, 15%, 43%);
+    --placeholder-text: hsl(206, 6%, 79%);
+    --main-heading: hsl(271, 36%, 24%);
+    --paragraph: hsl(270, 7%, 64%);
+    --gradient-light-magenta: hsl(293, 100%, 63%);
+    --gradient-light-magenta2: hsla(276, 89%, 33%, 0.562);
+    --gradient-light-violet: hsl(264, 100%, 61%);
+    --gradient-bg-wrapper: linear-gradient(to top, var(--gradient-light-violet), var(--gradient-light-magenta2));
+    --gradient-bg-header: linear-gradient(to right, var(--gradient-light-violet), var(--gradient-light-magenta));
+    --gradient-bg-price: linear-gradient(to left, var(--gradient-light-violet), var(--gradient-light-magenta));
+
+
+    /* SECONDARY */
+    --app-background: hsl(270, 20%, 96%);
+    --submit-btn-bkgrd: hsl(271, 36%, 24%);
+    --radio-btn-outline: hsl(289, 100%, 72%);
+}
+
+.wrapper{
+    background-color: transparent;
+    position: relative;
+    height: 100vh;
+}
+.wrapper::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -110px;
+    width: 80%;
+    height: 70%;
+    background: var(--gradient-bg-wrapper);
+    border-bottom-right-radius: 80%;
+    z-index: 1;
+}
+
+.mobile-model{
+    position: absolute;
+    top: 5rem;
+    left: 60px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 1px 25px 3px rgba(0, 0, 0, 0.089);
+    width: 255px;
+    height: 470px;
+    background: white;
+    z-index: 10;    
+}
+
+header{
+    display: flex;
+    background: var(--gradient-bg-header);
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 20px 0 20px;
+    position: relative;
+    align-items: center;
+}
+header::before{
+    content: '';
+    position: absolute;
+    width: 55%;
+    height: 20%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+.arrow{
+    color: #fff;
+}
+
+.avatar{
+    background: url('./images/avatar.jpg'), no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-left: 8px;
+}
+
+.profile{
+    color: #fff;
+    margin-left: 8px;
+    font-size: 0.6rem;
+}
+
+.profile-name{
+    font-size: 0.55rem;
+    letter-spacing: 0.05rem;
+}
+.profile-status{
+    font-size: 0.45rem;
+    padding-top: 3px;
+    color: var(--app-sub-heading);
+}
+
+.menu{
+    margin-left: auto;
+}
+.menu p{
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+main{
+    background: rgba(248, 248, 248, 0.87);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 86%;
+}
+
+.chat-txt{
+    max-width: 145px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.send-txt{
+    background: rgb(252, 241, 255);
+    border-bottom-left-radius: 0;
+    color: var(--chat-txt-left);
+}
+
+.price-txt{
+    max-width:160px;
+    display: flex;
+    background: var(--gradient-bg-price);
+    padding: 10px 15px;
+    align-items: center;
+    color: var(--app-sub-heading);
+}
+
+.check{
+    padding: 5px;
+    border: solid 2px var(--radio-btn-outline);
+    border-radius: 50%;
+}
+
+.time-txt{
+    margin-left: 7px;
+}
+
+.price{
+    margin-left: auto;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.receive-txt{
+    background: rgb(255, 255, 255);
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 1px 5px rgba(141, 141, 141, 0.247);
+    color: var(--chat-txt-right);
+}
+.receive-img{
+    align-self: flex-end;
+}
+
+.chat-img{
+    display: flex;
+    justify-content: space-evenly;
+    background: none;
+    margin-bottom: 10px;
+}
+.chat-img img{
+   width: 40px;
+   border-radius: 5px;
+   margin-left: 8px;
+}
+
+.input-msg{
+    display: flex;
+    width: 95%;
+    background: #fff;
+    padding: 8px 5px 5px 15px;
+    margin: 5px auto 5px auto;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.input-txt{
+    color: var(--placeholder-text);
+}
+.input-arrow{
+    margin-left: auto;
+    display: flex;
+    color: #fff;
+    background: var(--submit-btn-bkgrd);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.booking{
+    padding: 30px 50px;
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-title{
+    color: var(--main-heading);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.booking-txt{
+    color: var(--paragraph);
+    text-align: center;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width:1024px){
+    .wrapper::before{
+        width: 30%;
+        height: 90%;
+        border-bottom-right-radius: 250px;
+        border-bottom-left-radius: 250px;
+    }
+    .wrapper::after{
+        content: '';
+        position: absolute;
+        bottom: -50px;
+        right: -110px;
+        width: 30%;
+        height: 90%;
+        border-top-right-radius: 250px;
+        border-top-left-radius: 250px;
+        background: var(--gradient-light-violet);
+        opacity: 0.03;
+    }
+
+    .mobile-model{
+        left: 280px;
+        top: 8rem;       
+    }
+    
+    .booking{
+    bottom: 50%;
+    left: 40%;
+    width: 34%;
+    transform: translateY(50%);
+    }
+
+    .booking-txt{
+        text-align: left;
+    }
+    .booking-title{
+        text-align: left;
+        width: 100%;
+    }
+}
